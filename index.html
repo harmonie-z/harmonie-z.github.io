@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <a href="#" class="logo">小张的作品集</a>
+        <a href="#" class="logo">Work</a>
     </header>
     <section>
         <img src="images/stars.png" id="stars">
@@ -26,7 +26,7 @@
 
 
     <div class="sec" id="sec">
-        <h2 id="u3d">U3D 小项目</h2>
+        <h2 id="u3d">U3D/UE4 小项目</h2>
         <section>
             <!-- 左边文字介绍 -->
             <div class="left">
@@ -152,13 +152,100 @@
                 </div>
             </div>
         </section>
+        <!-- 左边文字介绍 -->
+        <section>
+            <div class="left">
+        
+                <h4>·VR动物视角</h4><br>
+                <p>工作内容：VR 环境的相机切换与简单交互；动物视角的底层shader实现和屏幕后处理实现；动态替换着色器与材质</p>
+            </div>
+            <!-- 右边图片展示 -->
+            <div class="right">
+                <div class="accordion5">
+                    <ul>
+                        <li tabindex="1">
+                            <div>
+                                <a href="#">
+                                    <h2>蛇的视角</h2>
+                                    <p>读取uv两个通道的数据，并依据坐标值来改变颜色，暂时无法实现替换材质后在不影响这个效果的前提下添加其他摄像机效果</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li tabindex="2">
+                            <div>
+                                <a href="#">
+                                    <h2>狐狸视角</h2>
+                                    <p>也是通过自定义着色器实现，可以设置颜色和强度</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li tabindex="3">
+                            <div>
+                                <a href="#">
+                                    <h2>环境测试</h2>
+                                    <p>通过左右手柄的按键点击可以实现瞬移、射线与模型进行基本交互，Post Processing屏幕后处理的效果无法显示</p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <div class="spe1"><p>基于hdrp的森林仿真系统</p></div>
+        <div>
+            <img src="images/hdrp2.png" alt="">
+        </div>
+<div class="spe2"><p>cinematic mode</p></div>
+                    <div>
+                        <img src="images/hdrp1.gif" alt="">
+                    </div>
+                    <br><br><br>
+                    <div class="spe3">
+                        <p>HDRP 内置转换工具可将普通项目资源升级，但只针对部分材质和纹理，照
+                        明、后处理、自定义着色器以及场景图形设置都需要自行设计，具有较高的
+                        灵活性。比如修改植物材质的 diffusion profile 为 foliage，可以根据光源颜色
+                        进行反射。</p>
+                        <br>
+                        <p>使用 HDRP 自带的 Volume 框架来设置全局或局部的环境，更改场景氛围。
+                        其中每个 Volume 都有一个 Volume Profile(体积配置文件)，体积配置文件将
+                        属性组织到结构中，通过这些结构控制不同的环境设置。</p>
+                        <br>
+                        <p>项目中特殊的材质或粒子特效如带风场的植被、模拟真实反射与波动效果的
+                        水体、下雨效果等，都是使用具有可视化界面的 shaderGraph 和 VFX Graph
+                        插件来创建的着色器与材质。</p>
+                        <br>
+                    </div>
+                    <div class="spe2">
+                        <p>first person mode</p>
+                    </div>
+                    <div class="spe2">
+                        <img src="images/hdrp3.gif" alt="">
+                    </div>
+                    <br><br><br>
+
+                            <div class="spe1">
+                                <p>VR野生菌科普(UE4)</p>
+                            </div>
+                                                <div class="spe2">
+                                                    <img src="images/hdrp4.gif" alt="">
+                                                </div>
+                                                <br><br>
+                                                <div class="spe3">
+                                                    <p>该项目让用户沉浸在大片“野生菌森林”中，产生身临其
+                                                    境的感觉，并且通过 VR 设备用户还可以 360 度近距离观察放大多倍的野生菌，查看野
+                                                    生菌鉴别知识，与野生菌进行交互，如野生菌采摘，野生菌食用，使用眼镜道具查看
+                                                    蘑菇的毒性。当用户在 VR 中食用了有毒的野生菌时，会出现中毒幻象，通过这样生动
+                                                    身临其境又充满趣味性的 VR 体验增加用户的野生菌鉴别知识</p>
+                                                </div>
+                                                <br><br><br>
 
         <h2 id="prps">PR/PS</h2>
 
-        <p>(自学产物，多为追星相关(。﹏。*)自罚三杯)</p>
+        <p>(待补充)</p>
 
-        <section>
-            <!-- 视频播放器 -->
+<!--视频播放器         <section>
+
             <div class="video-container">
                 <div class="video-list">
                     <video class="active" src="images/video01.mp4" muted></video>
@@ -170,7 +257,7 @@
 
                 </div>
             </div>
-        </section>
+        </section> -->
 
 
 
@@ -183,15 +270,23 @@
                         <div class="picBox">
                             <img src="images/picBox01.png" alt="">
                             <div class="content">
-                                <p>板绘</p>
+                                <p>板绘1</p>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="picBox">
-                            <img src="images/picBox02.jpg" alt="">
+                            <img src="images/picBox02.png" alt="">
                             <div class="content">
-                                <p>RGB颜色</p>
+                                <p>板绘2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="picBox">
+                            <img src="images/picBox05.png" alt="">
+                            <div class="content">
+                                <p>板绘3</p>
                             </div>
                         </div>
                     </div>
@@ -211,21 +306,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="picBox">
-                            <img src="images/picBox05.png" alt="">
-                            <div class="content">
-                                <p>光效</p>
-                            </div>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
         </section>
 
 
         <h2 id="frontending">前端学习</h2>
-        <p>(正在努力学习中)</p>
+        <p>(待补充)</p>
         <section>
             <!-- 左边文字介绍 -->
             <div class="left">
@@ -270,42 +358,24 @@
         </section>
 
 
-        <h2 id="draw">手绘</h2>
-        <p>(很菜，大部分是临摹产物)</p>
-        <section>
+        <h2 id="draw">其他</h2>
+        <p>(待补充)</p>
 
-            <!-- 手绘画廊 -->
-            <div class="swiper-container mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="drawBox">
-                            <img src="images/draw01.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="drawBox">
-                            <img src="images/draw02.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="drawBox">
-                            <img src="images/draw03.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="drawBox">
-                            <img src="images/draw04.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="drawBox">
-                            <img src="images/draw05.jpg" alt="">
-                        </div>
-                    </div>
+                            <div class="spe1">
+                                <p>电视剧分集讨论情感分析可视化</p>
+                            </div>
+                                                                            <div class="spe2">
+                                                                                <img src="images/data1.png" alt="">
+                                                                            </div>
+                                                                            <div class="spe3">
+                                                                                <p><br>*数据爬取自豆瓣
+                                                                                    <br><br>
+使用 tensorflow 框架来实现双向多层神经网络.tensorflow 是业界常用的神经网络开发框架,能够提供神经网络中常用的循环层,全链接层以及激活函数,
+优化器和函数,可以支持快速开发神经网络.GRU(门控循环单元)是一种常用于自然语言处理的神经网络层,带有记忆功能,能够利用记忆功能实现结合上下文进行自然语言处理。
+                                                                                </p>
+                                                                            </div>
+                                                                            
 
-                </div>
-            </div>
-        </section>
 
     </div>
 
@@ -316,7 +386,7 @@
                 <li>
                     <a href="#u3d">
                         <span class="icon"><img src="images/planet-04.png" alt=""></span>
-                        <span class="title">U3D小项目</span>
+                        <span class="title">U3D/UE4小项目</span>
                     </a>
                 </li>
                 <li>
