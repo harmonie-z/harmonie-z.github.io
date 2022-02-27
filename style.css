@@ -113,7 +113,7 @@ height: 500px;
     color: #fff;
 }
 .sec p {
-    font-size: 1em;
+    font-size: 1.5em;
     color: #fff;
 }
 
@@ -198,14 +198,14 @@ color: #fff;
     content: '<';
 }
 
-.accordion,.accordion2,.accordion3,.accordion4 {
+.accordion,.accordion2,.accordion3,.accordion4,.accordion5 {
 width: 100%;
     max-width: 700px;
     height: 300px;
     overflow: hidden;
     margin: 50px auto;
 }
-.accordion ul,.accordion2 ul,.accordion3 ul,.accordion4 ul{
+.accordion ul,.accordion2 ul,.accordion3 ul,.accordion4 ul,.accordion5 ul{
     width: 100%;
     display: table;
     table-layout: fixed;
@@ -215,7 +215,8 @@ width: 100%;
 .accordion ul li,
 .accordion2 ul li, 
 .accordion3 ul li, 
-.accordion4 ul li {
+.accordion4 ul li,
+.accordion5 ul li{
     display: table-cell;
     vertical-align: bottom;
     position: relative;
@@ -229,7 +230,8 @@ width: 100%;
 .accordion ul li div, 
 .accordion2 ul li div, 
 .accordion3 ul li div, 
-.accordion4 ul li div{
+.accordion4 ul li div,
+.accordion5 ul li div{
     display: block;
     overflow: hidden;
     width: 100%;
@@ -237,7 +239,8 @@ width: 100%;
 .accordion ul li div a, 
 .accordion2 ul li div a, 
 .accordion3 ul li div a, 
-.accordion4 ul li div a {
+.accordion4 ul li div a,
+.accordion5 ul li div a {
     display: block;
     height: 300px;
     width: 100%;
@@ -253,14 +256,15 @@ width: 100%;
 .accordion ul li div a *, 
 .accordion2 ul li div a *, 
 .accordion3 ul li div a *, 
-.accordion4 ul li div a * {
+.accordion4 ul li div a *,
+.accordion5 ul li div a * {
     opacity: 0;
     margin: 0;
     width: 100%;
     text-overflow: ellipsis;
     position: relative;
     z-index: 5;
-    white-space: nowrap;
+    white-space: normal;
     overflow: hidden;
     -webkit-transform: translateX(-20px);
     transform: translateX(-20px);
@@ -271,7 +275,8 @@ width: 100%;
 .accordion ul li div a h2,
 .accordion2 ul li div a h2, 
 .accordion3 ul li div a h2, 
-.accordion4 ul li div a h2 {
+.accordion4 ul li div a h2,
+.accordion5 ul li div a h2  {
     text-overflow: clip;
     text-transform: uppercase;
     font-size: 20px;
@@ -282,7 +287,8 @@ width: 100%;
 .accordion ul li div a p,
 .accordion2 ul li div a p,
 .accordion3 ul li div a p,
-.accordion4 ul li div a p {
+.accordion4 ul li div a p,
+.accordion5 ul li div a p {
     top: 160px;
     font-size: 12px;
 }
@@ -323,17 +329,28 @@ width: 100%;
 .accordion4 ul li:nth-child(3) {
     background-image: url(images/weixin03.png);
 }
+.accordion5 ul li:nth-child(1) {
+    background-image: url(images/vr04.png);
+}
+.accordion5 ul li:nth-child(2) {
+    background-image: url(images/vr05.png);
+}
+.accordion5 ul li:nth-child(3) {
+    background-image: url(images/vr06.png);
+}
 
 .accordion ul:hover li, .accordion ul:focus-within li,
 .accordion2 ul:hover li, .accordion2 ul:focus-within li,
 .accordion3 ul:hover li, .accordion3 ul:focus-within li,
-.accordion4 ul:hover li, .accordion4 ul:focus-within li {
+.accordion4 ul:hover li, .accordion4 ul:focus-within li,
+.accordion5 ul:hover li, .accordion5 ul:focus-within li {
     width: 8%;
 }
 .accordion ul li:focus,
 .accordion2 ul li:focus,
 .accordion3 ul li:focus,
-.accordion4 ul li:focus {
+.accordion4 ul li:focus,
+.accordion5 ul li:focus {
     outline: none;
 }
 
@@ -344,7 +361,9 @@ width: 100%;
 .accordion3 ul:hover li:hover,
 .accordion3 ul li:focus, .accordion3 ul:focus-within li:focus,
 .accordion4 ul:hover li:hover,
-.accordion4 ul li:focus, .accordion4 ul:focus-within li:focus {
+.accordion4 ul li:focus, .accordion4 ul:focus-within li:focus,
+.accordion5 ul:hover li:hover,
+.accordion5 ul li:focus, .accordion5 ul:focus-within li:focus {
   width: 60%;
 }
 
@@ -355,7 +374,9 @@ width: 100%;
  .accordion3 ul:hover li:hover a,
 .accordion3 ul li:focus a, .accordion3 ul:focus-within li:focus a,
  .accordion4 ul:hover li:hover a,
-.accordion4 ul li:focus a, .accordion4 ul:focus-within li:focus a {
+.accordion4 ul li:focus a, .accordion4 ul:focus-within li:focus a,
+ .accordion5 ul:hover li:hover a,
+.accordion5 ul li:focus a, .accordion5 ul:focus-within li:focus a {
   background: rgba(0, 0, 0, 0.4);
 }
 
@@ -366,7 +387,9 @@ width: 100%;
 .accordion3 ul:hover li:hover a *,
 .accordion3 ul li:focus a *, .accordion3 ul:focus-within li:focus a *,
 .accordion4 ul:hover li:hover a *,
-.accordion4 ul li:focus a *, .accordion4 ul:focus-within li:focus a * {
+.accordion4 ul li:focus a *, .accordion4 ul:focus-within li:focus a *,
+.accordion5 ul:hover li:hover a *,
+.accordion5 ul li:focus a *, .accordion5 ul:focus-within li:focus a * {
   opacity: 1;
   -webkit-transform: translateX(0);
   transform: translateX(0);
@@ -375,32 +398,40 @@ width: 100%;
 .accordion ul:hover li,
 .accordion2 ul:hover li,
 .accordion3 ul:hover li,
-.accordion4 ul:hover li {
+.accordion4 ul:hover li,
+.accordion5 ul:hover li {
     width: 8% !important;
 }
 
 .accordion ul:hover li a *,
 .accordion2 ul:hover li a *,
 .accordion3 ul:hover li a *,
-.accordion4 ul:hover li a *  {
+.accordion4 ul:hover li a *,
+.accordion5 ul:hover li a *  {
     opacity: 0 !important;
 }
 
 .accordion ul:hover li:hover,
 .accordion2 ul:hover li:hover,
 .accordion3 ul:hover li:hover,
-.accordion4 ul:hover li:hover {
+.accordion4 ul:hover li:hover,
+.accordion5 ul:hover li:hover {
     width: 60% !important;
 }
 
 .accordion ul:hover li:hover a,
 .accordion2 ul:hover li:hover a,
 .accordion3 ul:hover li:hover a,
-.accordion4 ul:hover li:hover a {
+.accordion4 ul:hover li:hover a,
+.accordion5 ul:hover li:hover a {
     background: rgba(0,0,0,.4);
 }
 
-.accordion ul:hover li:hover a *, .accordion2 ul:hover li:hover a *, .accordion3 ul:hover li:hover a *, .accordion4 ul:hover li:hover a * {
+.accordion ul:hover li:hover a *,
+.accordion2 ul:hover li:hover a *,
+.accordion3 ul:hover li:hover a *,
+.accordion4 ul:hover li:hover a *,
+.accordion5 ul:hover li:hover a * {
     opacity: 1 !important;
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -410,13 +441,14 @@ width: 100%;
     body {
         margin:0;
     }
-    .accordion, .accordion2, .accordion3, .accordion4 {
+    .accordion, .accordion2, .accordion3, .accordion4, .accordion5 {
         height: auto;
     }
     .accordion ul li, .accordion ul li:hover, .accordion ul:hover li, .accordion ul:hover li:hover,
     .accordion2 ul li, .accordion2 ul li:hover, .accordion2 ul:hover li, .accordion2 ul:hover li:hover,
-    .accordion3 ul li, .accordion3 ul li:hover, .accordion3 ul:hover li, .accordion3 ul:hover li:hover，
-    .accordion4 ul li, .accordion4 ul li:hover, .accordion4 ul:hover li, .accordion4 ul:hover li:hover {
+    .accordion3 ul li, .accordion3 ul li:hover, .accordion3 ul:hover li, .accordion3 ul:hover li:hover,
+    .accordion4 ul li, .accordion4 ul li:hover, .accordion4 ul:hover li, .accordion4 ul:hover li:hover,
+    .accordion5 ul li, .accordion5 ul li:hover, .accordion5 ul:hover li, .accordion5 ul:hover li:hover {
         position: relative;
         display: table;
         table-layout: fixed;
@@ -498,4 +530,21 @@ background: #382e3bc9;
 .swiper-container-3d .swiper-slide-shadow-left,
 .swiper-container-3d .swiper-slide-shadow-right {
     background-image: none;
+}
+
+.spe1 {
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: center;
+    height: 100px;
+}
+.spe2 {
+    text-align: center;
+}
+.spe3 {
+    font-weight: 300;
+    font-size: 0.8em;
+}
+.spe4 {
+    height: 200px;
 }
